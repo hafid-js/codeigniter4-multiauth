@@ -72,8 +72,8 @@ class Auth extends BaseController
            );
 
            $this->Auth_Model->save_register($data);
-           session()->setFlashdata('pesan','Register Berhasil !');
-           return redirect()->to(base_url('auth/register'));
+           session()->setFlashdata('pesan','Register Berhasil ! Silahkan Login');
+           return redirect()->to(base_url('auth/login'));
         } else {
             //jika tidak valid
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());

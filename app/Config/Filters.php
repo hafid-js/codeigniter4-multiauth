@@ -40,7 +40,8 @@ class Filters extends BaseConfig
         ],
         'after' => [
             'authfilter' => ['except' => [
-                'home', 'home/*'
+                'home', 'home/*',
+                'menu', 'menu/*'
             ]],
             'toolbar',
             // 'honeypot',
