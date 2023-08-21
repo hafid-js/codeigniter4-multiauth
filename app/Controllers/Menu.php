@@ -13,7 +13,7 @@ class Menu extends BaseController
         }
         $data = array (
             'title' => 'Menu Admin',
-            'isi' => 'v_menu'
+            'isi' => 'v_halaman'
         );
         return view('layout/v_wrapper', $data);
     }
@@ -25,7 +25,7 @@ class Menu extends BaseController
         }
         $data = array (
             'title' => 'Menu User',
-            'isi' => 'v_menu'
+            'isi' => 'v_halaman'
         );
         return view('layout/v_wrapper', $data);
     }
@@ -37,7 +37,7 @@ class Menu extends BaseController
         }
         $data = array (
             'title' => 'Menu Pelanggan',
-            'isi' => 'v_menu'
+            'isi' => 'v_halaman'
         );
         return view('layout/v_wrapper', $data);
     }

@@ -4,12 +4,12 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
-class Pelanggan extends BaseController
+class Admin extends BaseController
 {
     public function index()
     {
         $data = array (
-            'title' => 'Halaman Pelanggan',
+            'title' => 'Halaman Admin',
             'isi' => 'v_halaman'
         );
         return view('layout/v_wrapper', $data);
